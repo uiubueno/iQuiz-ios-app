@@ -63,14 +63,92 @@
                     <view key="view" contentMode="scaleToFill" id="DXh-64-LhT">
                         <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OY2-Ff-3aC">
+                                <rect key="frame" x="64" y="329" width="312" height="62"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="L47-ix-Ts4"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 01">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="respostaBotaoPressionado:" destination="688-Vb-zCv" eventType="touchUpInside" id="p05-NH-EB5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Z5-ot-bmT">
+                                <rect key="frame" x="64" y="423" width="312" height="62"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="CdG-34-eKm"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 02">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="respostaBotaoPressionado:" destination="688-Vb-zCv" eventType="touchUpInside" id="sNA-sg-yaF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXF-8U-vhR">
+                                <rect key="frame" x="64" y="517" width="312" height="62"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="u6R-Ct-qXV"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 03">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="respostaBotaoPressionado:" destination="688-Vb-zCv" eventType="touchUpInside" id="ftJ-45-zny"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Titulo da Questao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRo-ka-1mC">
+                                <rect key="frame" x="64" y="214" width="312" height="39"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4Xg-tm-GOu"/>
                         <color key="backgroundColor" red="0.32156862745098036" green="0.11764705882352941" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OY2-Ff-3aC" firstAttribute="leading" secondItem="4Xg-tm-GOu" secondAttribute="leading" constant="64" id="3du-Ae-alr"/>
+                            <constraint firstItem="4Xg-tm-GOu" firstAttribute="trailing" secondItem="TRo-ka-1mC" secondAttribute="trailing" constant="64" id="3o3-5E-T0c"/>
+                            <constraint firstItem="4Xg-tm-GOu" firstAttribute="trailing" secondItem="TRo-ka-1mC" secondAttribute="trailing" constant="54" id="4A6-hd-FON"/>
+                            <constraint firstItem="4Xg-tm-GOu" firstAttribute="trailing" secondItem="OY2-Ff-3aC" secondAttribute="trailing" constant="64" id="9D3-xu-PDh"/>
+                            <constraint firstItem="4Xg-tm-GOu" firstAttribute="trailing" secondItem="IXF-8U-vhR" secondAttribute="trailing" constant="64" id="NrD-Md-s2V"/>
+                            <constraint firstItem="8Z5-ot-bmT" firstAttribute="top" secondItem="OY2-Ff-3aC" secondAttribute="bottom" constant="32" id="TYD-2r-Ueo"/>
+                            <constraint firstItem="TRo-ka-1mC" firstAttribute="top" secondItem="4Xg-tm-GOu" secondAttribute="top" constant="137" id="ceT-pY-NZC"/>
+                            <constraint firstItem="TRo-ka-1mC" firstAttribute="leading" secondItem="4Xg-tm-GOu" secondAttribute="leading" constant="64" id="e9v-m3-wXD"/>
+                            <constraint firstItem="OY2-Ff-3aC" firstAttribute="top" secondItem="TRo-ka-1mC" secondAttribute="bottom" constant="72" id="ga7-Bx-MSb"/>
+                            <constraint firstItem="IXF-8U-vhR" firstAttribute="top" secondItem="8Z5-ot-bmT" secondAttribute="bottom" constant="40" id="mD3-uw-lnj"/>
+                            <constraint firstItem="4Xg-tm-GOu" firstAttribute="trailing" secondItem="8Z5-ot-bmT" secondAttribute="trailing" constant="64" id="ml4-8U-fA3"/>
+                            <constraint firstItem="IXF-8U-vhR" firstAttribute="leading" secondItem="4Xg-tm-GOu" secondAttribute="leading" constant="64" id="r0E-uB-oYm"/>
+                            <constraint firstItem="8Z5-ot-bmT" firstAttribute="leading" secondItem="4Xg-tm-GOu" secondAttribute="leading" constant="64" id="tYl-Hv-LoC"/>
+                            <constraint firstItem="TRo-ka-1mC" firstAttribute="top" secondItem="4Xg-tm-GOu" secondAttribute="top" constant="112" id="vh9-Gr-9ZU"/>
+                            <constraint firstItem="IXF-8U-vhR" firstAttribute="top" secondItem="8Z5-ot-bmT" secondAttribute="bottom" constant="32" id="xnQ-Vk-TBc"/>
+                            <constraint firstItem="TRo-ka-1mC" firstAttribute="leading" secondItem="4Xg-tm-GOu" secondAttribute="leading" constant="53" id="yV7-cN-brm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="v4L-ye-BIR"/>
+                    <connections>
+                        <outlet property="tituloQuestaoLabel" destination="TRo-ka-1mC" id="DZs-0P-USG"/>
+                        <outletCollection property="botoesRespostas" destination="OY2-Ff-3aC" collectionClass="NSMutableArray" id="CXU-h0-O4O"/>
+                        <outletCollection property="botoesRespostas" destination="8Z5-ot-bmT" collectionClass="NSMutableArray" id="ewj-Lw-s5m"/>
+                        <outletCollection property="botoesRespostas" destination="IXF-8U-vhR" collectionClass="NSMutableArray" id="A4y-To-Ye8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJQ-3I-aNj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1885" y="-3"/>
+            <point key="canvasLocation" x="1884.5454545454547" y="-3.1380753138075317"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="z2v-HQ-FH1">
